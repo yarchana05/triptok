@@ -34,7 +34,7 @@ $(window).scroll(function(){
 
 
 
-
+/*sign in , sign up form visible password icon*/
 const forms=document.querySelector(".forms"),
     pwShowHide = document.querySelectorAll(".eye-icon"),
     links = document.querySelectorAll(".link");
@@ -55,29 +55,50 @@ pwShowHide.forEach(eyeIcon => {
     })
 })
 
+/*date-picker
 
-
-
-
-/*start-date and end-date calender
-function setDatepicker(_this){
-    let className = $(_this).parent()
-        .parent().parent().attr('class');
-    let removeSpace = className.replace(' ', '.');
-        $("." + removeSpace).datepicker({
-            format : "dd/mm/yyyy",
-            orientation: "bottom auto",
-            autoclose: true,
-            showOnFocus: "false"
-        });
-}*/
-$(function () {
-    $("#date").datepicker({
-        dateFormat: "dd-M-yy",
-        minDate:1
+function showDatePicker() {
+    var datePicker = $('#datepicker');
+    if (datePicker.css('display') === 'none') {
+      datePicker.show();
+    } else {
+      datePicker.hide();
+    }
+  }
+  
+  $(document).ready(function() {
+    // Attach a click event listener to the start date input field
+    $('#start-date').click(showDatePicker);
+  
+    // Attach a click event listener to the end date input field
+    $('#end-date').click(showDatePicker);
+  
+    // Initialize the date picker
+    $('#datepicker').datepicker({
+      onSelect: function(dateText, inst) {
+        var selectedDate = new Date(dateText);
+        var startDate = $('#start-date');
+        var endDate = $('#end-date');
+  
+        // Set the selected date in the corresponding input field
+        if (startDate.val() === '') {
+          startDate.val(dateText);
+        } else if (endDate.val() === '') {
+          endDate.val(dateText);
+          $('#datepicker').hide();
+        } else {
+          startDate.val(dateText);
+          endDate.val('');
+        }
+      }
     });
-
-    $(".date-icon").on("click",function(){
-        $("#date").focus();
+  });*/
+  
+  $(function() {
+    $('#daterange').daterangepicker({
+      opens: 'left'
     });
-});
+  });
+  
+
+
