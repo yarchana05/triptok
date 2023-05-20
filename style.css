@@ -1,5 +1,4 @@
 *{
-
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -40,8 +39,6 @@
     padding: 20px;
     text-align: center;
 }*/
-
-
 @font-face{
     font-family: 'hello';
     src:url('HIROMISAKE.ttf');
@@ -54,8 +51,6 @@
     position: fixed;
     width: 100%;
     align-items: center;
-
-
     transition: background-color 0.4s ease-out;
 }
 /*nav.scroll{
@@ -67,22 +62,18 @@
     box-shadow: 0px 4px 7px #777;
     background-color:rgba(255, 255, 255, 0.995);
 }
-
 .placeholder-glow{
     opacity:1;
-
 }
 #navbar .trip{
     font-family: 'hello';
 }
-
 #navbarSupportedContent{
     justify-content: end;
 }
 .navbar-nav{
     justify-content: space-between;
     width:75%;
-    
 }
 .navbar-nav button a{
     text-decoration: none;
@@ -91,13 +82,10 @@
  input[type="search"]{
     background: rgb(23, 18, 18);  
     border-radius: 20px;
-    border: rgb(26, 23, 23);
-
-    
+    border: rgb(26, 23, 23); 
 }
 .navbar-nav .Buttons .btn{
     background-color: #d8d8d8;
-
 }
 .input-group .btn{
     height: 100%;
@@ -106,9 +94,7 @@
     background-color: rgb(26, 23, 23);
     color: white;
     transition: 0.5s ease-in-out;
-    
 }
-
 .Buttons{
     opacity: 0;
     transition: 0.5s ease-in-out;
@@ -135,14 +121,12 @@
     cursor: pointer;
     transform: translate(-160%,30%);
 }
-
 .first-page{
     position: relative;
     background-size: auto;
     background-position: 100%;
-   background:url('bg7.webp');;
-    background-size: cover;
-       
+    background:url('bg7.webp');;
+    background-size: cover;  
 }
 .first-page .container-fluid .row{
     justify-content: center;
@@ -151,7 +135,6 @@
 .main-box{
     background: rgba(0,0,0,.4);
     border-radius: 10px;
-    
 }
 /*.....second-page......*/
 .title{
@@ -160,7 +143,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    
 }
 .container .row .col img{
     height: 100px;
@@ -169,8 +151,7 @@
 .second-page .container .row .col:hover{
     box-shadow: 5px 10px 10px  rgb(211, 247, 233);
     border-radius: 20px;
-    transition: all .5s ease-in-out;
-   
+    transition: all .5s ease-in-out;  
 }
 /*...third page...*/
 
